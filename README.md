@@ -1,4 +1,4 @@
-# Fine-tuning de um foundation model 
+# FINE-TUNING DE UM FOUNDATION MODEL 
 
 No Tech Challenge desta fase, você precisa executar o fine-tuning de um 
 foundation model (Llama, BERT, MISTRAL etc.), utilizando o dataset "The 
