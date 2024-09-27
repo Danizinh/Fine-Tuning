@@ -1,0 +1,4 @@
+venv
+.env
+data/trn.json
+test.py
