@@ -18,9 +18,7 @@ finetuning_job = client.fine_tuning.jobs.create(
   training_file=train_file.id,
   model=os.environ.get("BASE_MODEL"),
   hyperparameters={
-      "n_epochs": 3,
-      "batch_size": 5,
-      "learning_rate_multiplier": 0.1
+      "n_epochs": 1,
     }
 )
 

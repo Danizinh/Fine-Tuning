@@ -16,7 +16,7 @@ def preparar_dados_para_finetuning(input_file, output_file):
                  user = f"{record['title']}"
                  assistant = f"{record['content']}"
 
-                 if count > 100:
+                 if count > 10:
                      break
                  count += 1
 
@@ -24,12 +24,11 @@ def preparar_dados_para_finetuning(input_file, output_file):
                     # Caso não tenha registro em branco, adiciona-o à lista
                     fine_tuning_data.append({
                         "messages": [
-                            {"role": "system", "content": "Você é um assistente especializado em e-commerce, responsável por fornecer descrições detalhadas e precisas de produtos com base no nome fornecido."},
-                            {"role": "user", "content": "Nome do produto: " + user},
-                            {"role": "assistant", "content": "Descrição: " + assistant}
+                            {"role": "system", "content": "You are an assistant specialized in e-commerce and must provide exactly the product description as stated in the training. Don't give generic answers, just the descriptions provided."},
+                            {"role": "user", "content": "Procuct name: " + user},
+                            {"role": "assistant", "content": "Product description: " + assistant}
                         ]})
-                 
-
+                    
              except json.JSONDecodeError as e:
                  print(f"Erro ao decodificar linha: {line}")
                  print(f"Erro: {e}")
