@@ -21,7 +21,7 @@ No Tech Challenge desta fase, você precisa executar o fine-tuning de um foundat
 2. **gpt-finetuning-v2.py** -> Chama a API da OpenAI para realizar o Fine-Tuning do modelo base (gpt-4o-mini) utilizando a base de dados ./data/dataset2.jsonl.
 3. **gpt-prompt-v2.py** -> Realiza a interação com o usuário comparando a resposta do modelo base versus o modelo Fine-Tunned. Os modelos estão em um arquivo .env e o resultado pode ser verificado no **relatório** e **vídeo** do grupo.
 
-### Pré-requisitos
+## Pré-requisitos
 
 - Python 3.x
 - Bibliotecas: `pandas`, `torch`, `transformers`, `bitsandbytes`, `folium`, `huggingface_hub`, `openai`
