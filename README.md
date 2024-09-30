@@ -5,7 +5,7 @@ No Tech Challenge desta fase, você precisa executar o fine-tuning de um foundat
 - Receber perguntas com um contexto obtido por meio do arquivo JSON “trn.json” que está contido dentro do dataset.
 - A partir do prompt formado pela pergunta do usuário sobre o título do produto, o modelo deverá gerar uma resposta baseada na pergunta do usuário trazendo como resultado do aprendizado do fine-tuning os dados da sua descrição.
 
-## ⚙️ Preparação do Dataset:
+## ⚙️ Proposta do Tech Challenge:
 
 1. **Descrição**: O The AmazonTitles-1.3MM consiste em consultas textuais reais de usuários e títulos associados de produtos relevantes encontrados na Amazon e suas descrições, medidos por ações implícitas ou explícitas dos usuários.
 2. **Preparação do Dataset**: Faça o download do dataset AmazonTitles-1.3MM e utilize o arquivo “trn.json”. Nele, você utilizará as colunas “title” e “content”, que contêm título e descrição, respectivamente. Prepare os prompts para o fine-tuning garantindo que estejam organizados de maneira adequada para o treinamento do modelo escolhido. Limpe e pré-processe os dados conforme necessário para o modelo escolhido.
@@ -19,7 +19,7 @@ No Tech Challenge desta fase, você precisa executar o fine-tuning de um foundat
 
 1. **gpt-database-v2.py** -> Realiza a etapa de preparação da base de dados extraindo "title" e "content" e diminuindo a quantidade de linhas devido ao custo expressivo e recursos limitados.
 2. **gpt-finetuning-v2.py** -> Chama a API da OpenAI para realizar o Fine-Tuning do modelo base (gpt-4o-mini) utilizando a base de dados ./data/dataset2.jsonl.
-3. **gpt-prompt-v2.py** -> Realiza a interação com o usuário comparando a resposta do modelo base versus o modelo Fine-Tunned. Os modelos estão em um arquivo .env e o resultado pode ser verificado no **relatório** e **vídeo** do grupo.
+3. **gpt-prompt-v2.py** -> Realiza a **interação com o usuário** (a linha que recebe o input do usuário está comentada para fins de testes) comparando a resposta do modelo base versus o modelo Fine-Tunned. Os modelos estão em um arquivo .env e o resultado pode ser verificado no **relatório** e **vídeo** do grupo.
 
 ## Pré-requisitos
 
