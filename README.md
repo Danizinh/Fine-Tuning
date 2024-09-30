@@ -17,7 +17,7 @@ No Tech Challenge desta fase, você precisa executar o fine-tuning de um foundat
 
 5. **Geração de Respostas**: Configure o modelo treinado para receber perguntas dos usuários. O modelo deverá gerar uma resposta baseada na pergunta do usuário e nos dados provenientes do fine-tuning, incluindo as fontes fornecidas.
 
-## ⚙️ Fine-Tuning usando a OpenAI:
+## Fine-Tuning usando a OpenAI:
 
 1. **API Key**: Conecte a API Key usando o arquivo .env
    
