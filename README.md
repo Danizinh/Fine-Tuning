@@ -5,7 +5,7 @@ No Tech Challenge desta fase, você precisa executar o fine-tuning de um foundat
 - Receber perguntas com um contexto obtido por meio do arquivo JSON “trn.json” que está contido dentro do dataset.
 - A partir do prompt formado pela pergunta do usuário sobre o título do produto, o modelo deverá gerar uma resposta baseada na pergunta do usuário trazendo como resultado do aprendizado do fine-tuning os dados da sua descrição.
 
-## ⚙️ Fine-Tuning usando o LLAMA:
+## ⚙️ Preparação do Dataset:
 
 1. **Descrição**: O The AmazonTitles-1.3MM consiste em consultas textuais reais de usuários e títulos associados de produtos relevantes encontrados na Amazon e suas descrições, medidos por ações implícitas ou explícitas dos usuários.
 
