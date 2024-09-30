@@ -8,22 +8,24 @@ No Tech Challenge desta fase, você precisa executar o fine-tuning de um foundat
 ## ⚙️ Preparação do Dataset:
 
 1. **Descrição**: O The AmazonTitles-1.3MM consiste em consultas textuais reais de usuários e títulos associados de produtos relevantes encontrados na Amazon e suas descrições, medidos por ações implícitas ou explícitas dos usuários.
-
 2. **Preparação do Dataset**: Faça o download do dataset AmazonTitles-1.3MM e utilize o arquivo “trn.json”. Nele, você utilizará as colunas “title” e “content”, que contêm título e descrição, respectivamente. Prepare os prompts para o fine-tuning garantindo que estejam organizados de maneira adequada para o treinamento do modelo escolhido. Limpe e pré-processe os dados conforme necessário para o modelo escolhido.
-
 3. **Chamada do Foundation Model**: Importe o foundation model que será utilizado e faça um teste apresentando o resultado atual do modelo antes do treinamento (para que se obtenha uma base de análise após o fine-tuning), e então será possível avaliar a diferença do resultado gerado.
-
 4. **Execução do Fine-Tuning**: Execute o fine-tuning do foundation model selecionado (por exemplo, BERT, GPT, Llama) utilizando o dataset preparado. Documente o processo de fine-tuning, incluindo os parâmetros utilizados e qualquer ajuste específico realizado no modelo.
-
 5. **Geração de Respostas**: Configure o modelo treinado para receber perguntas dos usuários. O modelo deverá gerar uma resposta baseada na pergunta do usuário e nos dados provenientes do fine-tuning, incluindo as fontes fornecidas.
 
 ## Fine-Tuning usando a OpenAI:
 
-1. **API Key**: Conecte a API Key usando o arquivo .env
-   
-2. **Arquivo JsonL**: O dataset precisa ser cortado em um tamanho menor para não gerar um custo expressivo (./data/dataset2.jsonl)
+### Rodar:
 
-3. **Prompt de sistema**: informa que o modelo é um assistente que deve fornecer a descrição de um produto inserido pelo usuário.
+1. gpt-database-v2.py
+2. gpt-finetuning-v2.py
+3. gpt-prompt-v2.py
+   
+### Etapas:
+
+1. **API Key**: Conecte a API Key usando o arquivo .env
+2. **Arquivo JsonL**: O dataset precisa ser cortado em um tamanho menor para não gerar um custo expressivo (./data/dataset2.jsonl)
+3. **Prompt de sistema**: Informa que o modelo é um assistente que deve fornecer a descrição de um produto inserido pelo usuário.
 
 ### Pré-requisitos
 
