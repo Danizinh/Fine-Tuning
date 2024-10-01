@@ -1,7 +1,9 @@
 ## Links dos Entregáveis
 
 Vídeo postado no Youtube: https://youtu.be/vgFoBqlg8I8
+
 Drive contendo o Relatório: https://drive.google.com/drive/folders/1jLiEe-05Cxf3-o2-WiMQDYy3Ss2f46wM?usp=sharing
+
 O relatório também está disponível neste repositório na pasta /Relatório.
 
 ## Fine-Tuning de um Foundation Model
